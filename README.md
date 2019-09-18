@@ -6,4 +6,5 @@ This project includes programming language exercises. You can reach exercises wi
 - C++
 - C
 - Bash
+- SQL
 
