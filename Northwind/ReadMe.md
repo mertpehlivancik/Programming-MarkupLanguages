@@ -64,17 +64,11 @@ CREATE TABLE [dbo].[Categories_backup](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 Create a new table by running the code at the top. Then, copy all the records in the Categories table to the Categories_backup table.
 29. Update the person's title is Sales Manager, city is Yorkshire whose EmployeeID is which you added person in step 2 from Employees table.
-
 30. Update the ship name to Ave. 5 de Mayo Porlamar from shippers table which company name of customer is GROSELLA-Restaurante from customer table.
-
 31. Update the company name of shippers to Yasar A.S but company name includes 'pp' in any position or  phone of shippers has (313) 555-5735.
-
 32. Update the company name of shippers to Aras Kargo and phone to (503)555-2222 which company name of shippers is Migros.
-
 33. Delete all records of order id is 11078  from Orders table.
-
 34. Delete all records from Categories_backup.
-
 35. Delete the records which quantity is 40 and unit price smaller than 20 from Order Details.
 
 36. Delete the records which their territory dsescription is New York.
