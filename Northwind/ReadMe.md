@@ -52,16 +52,16 @@ in descending order of TotalItemsOnHand.
 26. Add a new record to Employees table including LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Country, Extension, Notes, ReportsTo, PhotoPath.
 27. Add a new record to Shippers table including CompanyName,Phone.
 
-28.<br />CREATE TABLE [dbo].[Categories_backup](
-	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
-	[CategoryName] [nvarchar](15) NOT NULL,
-	[Description] [ntext] NULL,
-	[Picture] [image] NULL,
- CONSTRAINT [PK_Categories_backup] PRIMARY KEY CLUSTERED 
-(
-	[CategoryID] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+28.<br />CREATE TABLE [dbo].[Categories_backup](<br />
+	[CategoryID] [int] IDENTITY(1,1) NOT NULL,<br />
+	[CategoryName] [nvarchar](15) NOT NULL,<br />
+	[Description] [ntext] NULL,<br />
+	[Picture] [image] NULL,<br />
+ CONSTRAINT [PK_Categories_backup] PRIMARY KEY CLUSTERED <br />
+(<br />
+	[CategoryID] ASC<br />
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]<br />
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]<br />
 Create a new table by running the code at the top. Then, copy all the records in the Categories table to the Categories_backup table.
 
 29. Update the person's title is Sales Manager, city is Yorkshire whose EmployeeID is which you added person in step 2 from Employees table.
