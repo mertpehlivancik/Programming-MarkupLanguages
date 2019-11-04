@@ -71,23 +71,14 @@ Create a new table by running the code at the top. Then, copy all the records in
 33. Delete all records of order id is 11078  from Orders table.
 34. Delete all records from Categories_backup.
 35. Delete the records which quantity is 40 and unit price smaller than 20 from Order Details.
-
 36. Delete the records which their territory dsescription is New York.
-
-37. Create a procedure which shows all datas of ID's in category table which have the unit prices higher than 70 in the producks table.  
-38. Create a procedure and some inputs (lastname,firstName...) and then insert those inputs as a row in the Employees table 
-
+37. Create a procedure which shows all datas of ID's in category table which have the unit prices higher than 70 in the producks table.  38. Create a procedure and some inputs (lastname,firstName...) and then insert those inputs as a row in the Employees table. 
 39. Create a procedure and an input that update the freight's value to zero in the Orders table. And the input must be equal to the 
 postcode in the customers table.
-
 40. Create a procedure and an input that delete Employees the Employess table. Where employeeID equal to employeeTerritories EmployeeID and birthdate equal to your input.
-
 41. Create a trigger for the orders table and the insert function. Define two variables in this trigger for the 
 productID and the unitPrice from the order details table and update the orders tables freight column. the freight column equal the unite price.  
-
 42. Create a trigger for shippers table and delete function. when you delete a data from the shippers table you must update your 
 company name in the Shippers table.
-
 43. Create a trigger for employees table and update function. when you update your table, delete an employeeTerritories where lastName='Fuller'.
-
 44. Create a trigger on Orders table for delete function. when you delete a function in the orders table. the trigger will calculate sum of freight in the Orders table.
