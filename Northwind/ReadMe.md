@@ -51,6 +51,7 @@ in descending order of TotalItemsOnHand.
 25. Add a new record to Orders table including all columns.
 26. Add a new record to Employees table including LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Country, Extension, Notes, ReportsTo, PhotoPath.
 27. Add a new record to Shippers table including CompanyName,Phone.
+
 28.CREATE TABLE [dbo].[Categories_backup](
 	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
 	[CategoryName] [nvarchar](15) NOT NULL,
@@ -62,6 +63,7 @@ in descending order of TotalItemsOnHand.
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 Create a new table by running the code at the top. Then, copy all the records in the Categories table to the Categories_backup table.
+
 29. Update the person's title is Sales Manager, city is Yorkshire whose EmployeeID is which you added person in step 2 from Employees table.
 30. Update the ship name to Ave. 5 de Mayo Porlamar from shippers table which company name of customer is GROSELLA-Restaurante from customer table.
 31. Update the company name of shippers to Yasar A.S but company name includes 'pp' in any position or  phone of shippers has (313) 555-5735.
