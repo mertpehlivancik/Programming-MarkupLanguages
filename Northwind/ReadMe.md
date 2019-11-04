@@ -52,7 +52,7 @@ in descending order of TotalItemsOnHand.
 26. Add a new record to Employees table including LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Country, Extension, Notes, ReportsTo, PhotoPath.
 27. Add a new record to Shippers table including CompanyName,Phone.
 
-28.CREATE TABLE [dbo].[Categories_backup](
+28.<br />CREATE TABLE [dbo].[Categories_backup](
 	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
 	[CategoryName] [nvarchar](15) NOT NULL,
 	[Description] [ntext] NULL,
