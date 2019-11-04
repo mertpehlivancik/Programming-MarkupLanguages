@@ -1,4 +1,4 @@
-# About Project
+# Northwind
 - This project contains questions about SQL. 
 - The Northwind database must be used when practicing these questions.
 ## ER Diagram of Northwind Database
