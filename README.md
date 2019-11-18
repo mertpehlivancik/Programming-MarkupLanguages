@@ -1,5 +1,5 @@
 # Markup Languages
-- This folder includes frontend development exercises 
+- This folder includes frontend development exercises. 
 ## Used Technologies
 - HTML
 - CSS
