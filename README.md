@@ -1,10 +1,4 @@
-# Programming and Markup Languages
-This project includes programming and markup languages exercises. You can reach exercises with changing branch.
-## Content
-- Python
-- Java
-- C++
-- C
-- Bash
-- SQL
+# Content
+- This folder includes JavaScript problem solution. Problem statements and solutions is here.
+
 
