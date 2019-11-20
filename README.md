@@ -1,5 +1,5 @@
 # Programming and Markup Languages
-This project includes programming and markup languages exercises. You can reach exercises with changing branch.
+- This project includes programming and markup languages exercises. You can reach exercises with changing branch.
 ## Content
 - Python
 - Java
@@ -7,4 +7,6 @@ This project includes programming and markup languages exercises. You can reach 
 - C
 - Bash
 - SQL
+- HTML/CSS
+- JavaScript
 
