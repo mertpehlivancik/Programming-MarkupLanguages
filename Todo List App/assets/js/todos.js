@@ -1,4 +1,6 @@
 // Check Off Specific Todos By Clicking
+
+/*
 $("li").click(function(){
 	// If li is gray
 	console.log($(this).css("color"));
@@ -14,14 +16,14 @@ $("li").click(function(){
 	});
 	}
 });
+*/
+
 
 /*Below code block makes same job above code block.*/
-
-/*
 $("li").click(function(){
 	$(this).toggleClass("completed");
 });
-*/
+
 
 $("span").click(function(event){
 	$(this).parent().fadeOut(500,function(){
@@ -29,3 +31,15 @@ $("span").click(function(event){
 	});
 	event.stopPropogation();
 });
+
+$("input[type='text']").keypress(function(event){
+	if(event.which === 13){
+		// Grabbing new todo text from input
+		var todoText = $(this).val();
+		// Create a new li and add to ul
+		$("ul").append("<li><span>X</span> " + todoText + "</li>");
+	}
+});
+
+
+

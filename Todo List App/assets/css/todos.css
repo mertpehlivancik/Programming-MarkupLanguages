@@ -5,6 +5,6 @@
 }
 
 .completed {
-	color:gray;
+	color:red;
 	text-decoration: line-through;
 }
