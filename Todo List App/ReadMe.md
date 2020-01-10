@@ -1,2 +1,2 @@
 # Screenshot of Project
-![](image/screenshot.png)
+![](image/Screenshot.PNG)
