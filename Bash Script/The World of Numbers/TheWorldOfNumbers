@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read X
+read Y
+
+sum=$(expr $X + $Y)
+difference=$(expr $X - $Y)
+product=$(expr ($X * $Y))
+quotient=$(expr $X / $Y)
+
+echo $sum
+echo $difference
+echo $((X * Y))
+echo $quotient
+
+
+
