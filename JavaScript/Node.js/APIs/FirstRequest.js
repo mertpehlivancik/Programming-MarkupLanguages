@@ -5,6 +5,7 @@ request('http://www.google.com', function (error, response, body) {
   console.log('body:', body); // Print the HTML for the Google homepage.
 }); */
 
+/*
 var request = require('request');
 request('www.google.com', function(error, response, body){
 	if(error){
@@ -16,4 +17,13 @@ request('www.google.com', function(error, response, body){
 			console.log(body);
 		}
 	}
+});
+*/
+
+var request = require('request');
+request('http://dummy.restapiexample.com/api/v1/employees', function(error, response, body){
+	if(!error && response.statusCode == 200){
+		var parsedData = JSON.parse(body);
+		console.log(parsedData);
+	} 
 });
