@@ -1,0 +1,31 @@
+body h2 {
+    font-family: 'Simonetta', cursive;
+}
+
+body p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.circular--square {
+    border-radius: 50%;
+    /*The style rule above is the shorthand for:*/
+    /*
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    */
+    margin-block-end: 30px;
+  }
+
+.aboutMe {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.icon {
+    padding: 10px;
+}
+
+
+
