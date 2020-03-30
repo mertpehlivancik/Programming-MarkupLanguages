@@ -26,9 +26,29 @@ app.post("/campgrounds", function(req, res){
 	if(getCamp == undefined){
 		var newCampground = {name: name, image: image};
 		campgrounds.push(newCampground);
+	}else{
+		let index = 0;
+		for (index = 0; index < campgrounds.length; index++) {
+			const element = campgrounds[index].name;
+			if(element == name){
+				break;
+			}
+		}
+		var x = campgrounds[index].image;
+		x = parseInt(x);
+		x = x + 1;
+		x = x.toString();
+		campgrounds[index].image = x;
+		
+
+
+
+		// var x = campgrounds[index].image;
+		// console.log(typeof x);
+		// var x = parseInt(x);
+		// x = x + 1;
+		// campgrounds[index].image = x;
 	}
-	var newCampground = {name: name, image: image};
-	campgrounds.push(newCampground);
 	// const getCamp=campgrounds.find(camp => camp.name == 1);
 	// console.log(getCamp.name);
 	// campgrounds.find(camp => camp.name = name).image = 10;
