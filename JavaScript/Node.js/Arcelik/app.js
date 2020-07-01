@@ -8,18 +8,22 @@ app.set("view engine", "ejs");
 var campgrounds = [
 ];
 
+var persons = [
+ "Engin KARAKURT",
+ "Mert PEHLİVANCIK",
+ "Mustafa BAŞAR"
+];
+
 app.get("/", function(req, res){
 	// res.send("This will be the landing page soon!");
 	res.render("landing");
 });
 
 app.get("/campgrounds", function(req, res){
-	res.render("campgrounds", {campgrounds:campgrounds});
+	res.render("campgrounds", {campgrounds:campgrounds, persons:persons});
 });
 
 app.post("/campgrounds", function(req, res){
-	// res.send("You hit the post route");	
-	// Get data from form and add to campgrounds array
 	var name = req.body.name;
 	var image = req.body.image;
 	const getCamp=campgrounds.find(camp => camp.name == name);
@@ -39,21 +43,8 @@ app.post("/campgrounds", function(req, res){
 		x = x + 1;
 		x = x.toString();
 		campgrounds[index].image = x;
-		
-
-
-
-		// var x = campgrounds[index].image;
-		// console.log(typeof x);
-		// var x = parseInt(x);
-		// x = x + 1;
-		// campgrounds[index].image = x;
 	}
-	// const getCamp=campgrounds.find(camp => camp.name == 1);
-	// console.log(getCamp.name);
-	// campgrounds.find(camp => camp.name = name).image = 10;
 	res.redirect("/campgrounds");
-	// redirect back to campgrounds page
 });
 
 app.get("/campgrounds/new", function(req, res){

@@ -14,6 +14,12 @@
 	<form action="/campgrounds" method="post">
 		<input type="text" name="name" placeholder="name">
 		<input type="text" name="image" placeholder="image url">
+		<input list="TekNo" name="TekNo" value="" class="form-control" autocomplete="off">
+		<datalist id="TekNo">
+			<% persons.forEach(function(person){ %>
+			<option value="<%= person %>"></option>
+			<% }); %>
+		</datalist>	
 		<button>Submit</button>
 	</form>
 
@@ -23,15 +29,20 @@
 				<thead>
 					<tr>
 					  <th scope="col">#</th>
+					  <th scope="col">Person</th>
 					  <th scope="col">Code</th>
 					  <th scope="col">Count</th>
 					</tr>
 				  </thead>
 				  <tbody>
+					<script type="text/javascript"> 
+						var selectedPerson = document.getElementById('TekNo');
+					</script>
 					<% campgrounds.forEach(function(campground){ %>
 					<tr>
 					  <%const Number = (element) => element == campground; %>
 					  <th scope="row"> <%=campgrounds.findIndex(Number) + 1%> </th>
+					  <td><%=selectedPerson%></td>
 					  <td><%=campground.name%></td>
 					  <td><%=campground.image%></td>
 					</tr>
