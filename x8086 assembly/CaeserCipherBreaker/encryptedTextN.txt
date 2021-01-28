@@ -1,0 +1,8 @@
+data structures that have visibility outside the single threaded environment they are created and destroyed in should always have reference counts in the kernel garbage collection 
+does not exist and outside the kernel garbage collection is slow and inefficient which means that you absolutely have to reference count all your uses reference counting means that 
+you can avoid locking and allows multiple users to have access to the data structure in parallel and not having to worry about the structure suddenly going away from under them just
+because they slept or did something else for a while note that locking is not a replacement for reference counting locking is used to keep data structures coherent while reference
+counting is a memory management technique usually both are needed and they are not to be confused with each other manyy data structures can indeed have two levels of reference 
+counting when there are users of different classes the subclass count counts the number of subclass users and decrements the global count just once when the subclass count goes to 
+zero examples of this kind of multi level reference counting can be found in memory management and in filesystem code remember if another thread can find your data structure and you 
+do not have a reference count on it you almost certainly have a bug
