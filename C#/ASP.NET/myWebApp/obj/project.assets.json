@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\honeybee\\Documents\\MyRepositories\\Local\\ASP.NET\\myWebApp\\myWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\honeybee\\Documents\\MyRepositories\\Github\\Programming-MarkupLanguages\\C#\\ASP.NET\\myWebApp\\myWebApp.csproj",
       "projectName": "myWebApp",
-      "projectPath": "C:\\Users\\honeybee\\Documents\\MyRepositories\\Local\\ASP.NET\\myWebApp\\myWebApp.csproj",
+      "projectPath": "C:\\Users\\honeybee\\Documents\\MyRepositories\\Github\\Programming-MarkupLanguages\\C#\\ASP.NET\\myWebApp\\myWebApp.csproj",
       "packagesPath": "C:\\Users\\honeybee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\honeybee\\Documents\\MyRepositories\\Local\\ASP.NET\\myWebApp\\obj\\",
+      "outputPath": "C:\\Users\\honeybee\\Documents\\MyRepositories\\Github\\Programming-MarkupLanguages\\C#\\ASP.NET\\myWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\honeybee\\AppData\\Roaming\\NuGet\\NuGet.Config"
