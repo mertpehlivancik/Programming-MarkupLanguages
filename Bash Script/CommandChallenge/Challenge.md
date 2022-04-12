@@ -106,3 +106,16 @@ rm -r $(find .)
 
 ```
 
+## Challenge 12 - "Deleting Files as Type"
+* There are files in this challenge with different file extensions. Remove all files with the .doc extension recursively in the current working directory.
+* Used command detailed description: 
+    * [rm](https://man7.org/linux/man-pages/man1/rm.1.html)
+    * [find](https://man7.org/linux/man-pages/man1/find.1.html)
+
+```
+rm -r $(find -type f -name "*.doc")
+
+```
+
+
+
