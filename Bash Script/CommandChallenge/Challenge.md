@@ -1,4 +1,4 @@
-# Solutions of Command Challenges 
+# Solutions of Command Challenges(cmdchallenge)
 There are challenges and their solutions in here. All of challenges belong to "https://cmdchallenge.com/". Thanks to everyone who created such an infrastructure.
 
 Source of these challenges: "https://cmdchallenge.com/"
@@ -135,4 +135,11 @@ grep -l 500 *
 
 ```
 
+## Challenge 15 - "Printing Relative Paths Which Start With Given Value"
+* Print the relative file paths, one path per line for all filenames that start with "access.log" in the current directory.
+* Used command detailed description: [ls](https://man7.org/linux/man-pages/man1/ls.1.html)
 
+```
+ls -d access.log*
+
+```
