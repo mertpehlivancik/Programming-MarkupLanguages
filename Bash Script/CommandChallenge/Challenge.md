@@ -21,11 +21,20 @@ echo "hello world"
 pwd
 
 ```
-## Challenge 3 - "List Files"
+## Challenge 3 - "Listing Files"
 * List names of all the files in the current directory, one file per line.
 * Used command detailed description: [ls](https://man7.org/linux/man-pages/man1/ls.1.html)
 
 ```
 ls
+
+```
+
+## Challenge 4 - "Printing the contents"
+* There is a file named access.log in the current directory. Print the contents.
+* Used command detailed description: [cat](https://man7.org/linux/man-pages/man1/cat.1.html)
+
+```
+cat access.log
 
 ```
