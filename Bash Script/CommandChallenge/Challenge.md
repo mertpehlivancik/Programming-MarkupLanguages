@@ -98,8 +98,8 @@ ln -s tmp/files/take-the-command-challenge take-the-command-challenge
 * Delete all of the files in this challenge directory including all subdirectories and their contents.
 * Hint: There are files and directories that start with a dot ".", "rm -rf *" won't work here!
 * Used command detailed description: 
-** [rm](https://man7.org/linux/man-pages/man1/rm.1.html)
-** [find](https://man7.org/linux/man-pages/man1/find.1.html)
+    * [rm](https://man7.org/linux/man-pages/man1/rm.1.html)
+    * [find](https://man7.org/linux/man-pages/man1/find.1.html)
 
 ```
 rm -r $(find .)
