@@ -117,5 +117,14 @@ rm -r $(find -type f -name "*.doc")
 
 ```
 
+## Challenge 13 - "Finding String and Printing All Lines"
+* There is a file named access.log in the current working directory. Print all lines in this file that contains the string "GET".
+* Used command detailed description: [grep](https://man7.org/linux/man-pages/man1/grep.1.html)
+
+```
+grep GET access.log
+
+``
+
 
 
