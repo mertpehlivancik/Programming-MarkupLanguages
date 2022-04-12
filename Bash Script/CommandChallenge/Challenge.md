@@ -30,11 +30,29 @@ ls
 
 ```
 
-## Challenge 4 - "Printing the contents"
+## Challenge 4 - "Printing The Contents"
 * There is a file named access.log in the current directory. Print the contents.
 * Used command detailed description: [cat](https://man7.org/linux/man-pages/man1/cat.1.html)
 
 ```
 cat access.log
+
+```
+
+## Challenge 5 - "Printing Last lines"
+* Print the last 5 lines of "access.log".
+* Used command detailed description: [tail](https://man7.org/linux/man-pages/man1/tail.1.html)
+
+```
+tail -5 access.log
+
+```
+
+## Challenge 6 - "Creating File"
+* Create an empty file named "take-the-command-challenge" in the current working directory.
+* Used command detailed description: [touch](https://man7.org/linux/man-pages/man1/touch.1.html)
+
+```
+touch take-the-command-challenge
 
 ```
