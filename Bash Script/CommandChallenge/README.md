@@ -143,3 +143,15 @@ grep -l 500 *
 ls -d access.log*
 
 ```
+
+## Challenge 16 - "Search Recursive and Using Piping"
+* Print all matching lines (without the filename or the file path) in all files under the current directory that start with "access.log" that contain the string "500".
+* Note that there are no files named access.log in the current directory, you will need to search recursively.
+* Used command detailed description: 
+    * [ls](https://man7.org/linux/man-pages/man1/ls.1.html)
+    * [find](https://man7.org/linux/man-pages/man1/find.1.html)
+
+```
+ls | find ./ -type f -name "*access.log*" | grep -r -h "500"
+
+```
