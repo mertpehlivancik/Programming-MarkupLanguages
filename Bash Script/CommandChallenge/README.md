@@ -178,3 +178,16 @@ find . -name "access.log*" | grep -r -o ^[0-9.]*
 ls -l | wc -l
 
 ```
+
+## Challenge 19 - "Printing sorted Contents"
+* Print the contents of access.log sorted.
+* Used commands detailed descriptions:
+    * [cat](https://man7.org/linux/man-pages/man1/cat.1.html)
+    * [sort](https://man7.org/linux/man-pages/man1/sort.1.html)
+
+```
+cat access.log | sort
+
+```
+
+
