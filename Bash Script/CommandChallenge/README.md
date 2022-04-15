@@ -223,7 +223,7 @@ echo {1..100}
 ```
 
 ## Challenge 23 - "Deleting Sentence which is given in File"
-* This challenge has text files (with a .txt extension) that contain the phrase "challenges are difficult". Delete this phrase from all text files recursively.
+* This challenge has text files (with a .txt extension) that contain the phrase "challenge are difficult". Delete this phrase from all text files recursively.
 * Note that some files are in subdirectories so you will need to search for them.
 * Used commands detailed descriptions: 
     * [find](https://man7.org/linux/man-pages/man1/find.1.html)
