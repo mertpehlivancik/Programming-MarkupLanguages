@@ -156,3 +156,14 @@ ls -d access.log*
 ls | find ./ -type f -name "*access.log*" | grep -r -h "500"
 
 ```
+
+## Challenge 17 - "Find IP Addresses From Given Files"
+* Extract all IP addresses from files that start with "access.log" printing one IP address per line.
+* Used commands detailed descriptions: 
+    * [find](https://man7.org/linux/man-pages/man1/find.1.html)
+    * [grep](https://man7.org/linux/man-pages/man1/grep.1.html)
+
+```
+find . -name "access.log*" | grep -r -o ^[0-9.]* 
+
+```
