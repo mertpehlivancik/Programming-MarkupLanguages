@@ -97,7 +97,7 @@ ln -s tmp/files/take-the-command-challenge take-the-command-challenge
 ## Challenge 11 - "Deleting All Files"
 * Delete all of the files in this challenge directory including all subdirectories and their contents.
 * Hint: There are files and directories that start with a dot ".", "rm -rf *" won't work here!
-* Used command detailed description: 
+* Used commands detailed descriptions: 
     * [rm](https://man7.org/linux/man-pages/man1/rm.1.html)
     * [find](https://man7.org/linux/man-pages/man1/find.1.html)
 
@@ -108,7 +108,7 @@ rm -r $(find .)
 
 ## Challenge 12 - "Deleting Files as Type"
 * There are files in this challenge with different file extensions. Remove all files with the .doc extension recursively in the current working directory.
-* Used command detailed description: 
+* Used commands detailed descriptions: 
     * [rm](https://man7.org/linux/man-pages/man1/rm.1.html)
     * [find](https://man7.org/linux/man-pages/man1/find.1.html)
 
@@ -147,9 +147,10 @@ ls -d access.log*
 ## Challenge 16 - "Search Recursive and Using Piping"
 * Print all matching lines (without the filename or the file path) in all files under the current directory that start with "access.log" that contain the string "500".
 * Note that there are no files named access.log in the current directory, you will need to search recursively.
-* Used command detailed description: 
+* Used commands detailed descriptions: 
     * [ls](https://man7.org/linux/man-pages/man1/ls.1.html)
     * [find](https://man7.org/linux/man-pages/man1/find.1.html)
+    * [grep](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 ```
 ls | find ./ -type f -name "*access.log*" | grep -r -h "500"
