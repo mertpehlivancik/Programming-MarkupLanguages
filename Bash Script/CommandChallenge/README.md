@@ -229,7 +229,7 @@ echo {1..100}
     * [find](https://man7.org/linux/man-pages/man1/find.1.html)
     * [sed](https://man7.org/linux/man-pages/man1/sed.1.html)
     * [exec](https://man7.org/linux/man-pages/man3/exec.3.html)
-    * NOTE: if you don't want to get "find: missing argument to `-exec'" error while running command in terminal, you should put ' {} \; ' end of the code while using "-exec" command.
+    * NOTE: if you don't want to get "find: missing argument to `-exec'" error while running command in terminal, you should put '{} \ ;' end of the code while using "-exec" command.
 
 ```
 find -type f -name "*.txt" -exec sed -i "challenge are difficult" {} \;
