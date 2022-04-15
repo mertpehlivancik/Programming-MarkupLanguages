@@ -221,3 +221,17 @@ cat ./split-me.txt | sed s/\;/\\n/g
 echo {1..100}
 
 ```
+
+## Challenge 23 - "Deleting Sentence which is given in File"
+* This challenge has text files (with a .txt extension) that contain the phrase "challenges are difficult". Delete this phrase from all text files recursively.
+* Note that some files are in subdirectories so you will need to search for them.
+* Used commands detailed descriptions: 
+    * [find](https://man7.org/linux/man-pages/man1/find.1.html)
+    * [sed](https://man7.org/linux/man-pages/man1/sed.1.html)
+    * [exec](https://man7.org/linux/man-pages/man3/exec.3.html)
+    * NOTE: if you don't want to get "find: missing argument to `-exec'" error while running command in terminal, you should put "{} \;" end of the code while using "-exec" command.
+
+```
+find -type f -name "*.txt" -exec sed -i "challenge are difficult" {} \;
+
+```
