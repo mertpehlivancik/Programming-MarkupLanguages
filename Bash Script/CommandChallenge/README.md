@@ -190,4 +190,14 @@ cat access.log | sort
 
 ```
 
+## Challenge 20 - "Counting Number of Lines from Given File"
+* Print the number of lines in access.log that contain the string "GET".
+* Used commands detailed descriptions:
+    * [find](https://man7.org/linux/man-pages/man1/find.1.html)
+    * [grep](https://man7.org/linux/man-pages/man1/grep.1.html)
+    * [wc](https://man7.org/linux/man-pages/man1/wc.1.html)
 
+```
+find ./ -type f -name "access.log" | grep -r -h "GET" | wc -l
+
+```
