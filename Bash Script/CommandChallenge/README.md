@@ -144,7 +144,7 @@ ls -d access.log*
 
 ```
 
-## Challenge 16 - "Search Recursive and Using Piping"
+## Challenge 16 - "Searching Recursive and Using Piping"
 * Print all matching lines (without the filename or the file path) in all files under the current directory that start with "access.log" that contain the string "500".
 * Note that there are no files named access.log in the current directory, you will need to search recursively.
 * Used commands detailed descriptions: 
@@ -157,7 +157,7 @@ ls | find ./ -type f -name "*access.log*" | grep -r -h "500"
 
 ```
 
-## Challenge 17 - "Find IP Addresses From Given Files"
+## Challenge 17 - "Finding IP Addresses From Given Files"
 * Extract all IP addresses from files that start with "access.log" printing one IP address per line.
 * Used commands detailed descriptions: 
     * [find](https://man7.org/linux/man-pages/man1/find.1.html)
@@ -165,5 +165,16 @@ ls | find ./ -type f -name "*access.log*" | grep -r -h "500"
 
 ```
 find . -name "access.log*" | grep -r -o ^[0-9.]* 
+
+```
+
+## Challenge 18 - "Counting the Number of Files in Current Directory"
+* Count the number of files in the current working directory. Print the number of files as a single integer.
+* Used commands detailed descriptions: 
+    * [ls](https://man7.org/linux/man-pages/man1/ls.1.html)
+    * [wc](https://man7.org/linux/man-pages/man1/wc.1.html)
+
+```
+ls -l | wc -l
 
 ```
