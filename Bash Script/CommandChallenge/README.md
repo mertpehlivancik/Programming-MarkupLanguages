@@ -201,3 +201,23 @@ cat access.log | sort
 find ./ -type f -name "access.log" | grep -r -h "GET" | wc -l
 
 ```
+
+## Challenge 21 - "Splitting on a Char"
+* The file split-me.txt contains a list of numbers separated by a ; character. Split the numbers on the ; character, one number per line.
+* Used commands detailed descriptions:
+    * [cat](https://man7.org/linux/man-pages/man1/cat.1.html)
+    * [sed](https://man7.org/linux/man-pages/man1/sed.1.html)
+
+```
+cat ./split-me.txt | sed s/\;/\\n/g
+
+```
+
+## Challenge 22 - "Printing x to y"
+* Print the numbers 1 to 100 separated by spaces.
+* Used commands detailed descriptions: [echo](https://man7.org/linux/man-pages/man1/echo.1.html)
+
+```
+echo {1..100}
+
+```
