@@ -5,5 +5,5 @@
 - ![](Screenshots/Exercise-1.PNG)
 - ![](Screenshots/Exercise-2.PNG)
 - ![](Screenshots/Exercise-3.PNG)
-- ![](CMD.PNG)
-- ![](Last.PNG)
+- ![](Screenshots/CMD.PNG)
+- ![](Screenshots/Last.PNG)
